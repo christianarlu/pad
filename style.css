@@ -126,4 +126,39 @@
 
 .content {
    background-color: #e2e9f1; 
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+
+   h2 {
+    margin-top: 24px;
+    margin-bottom: -8px;
+    
+    }
+
+   div.content-col1 {
+    h2 {
+        margin-left: 16px;
+    }
+    .projects {
+        display: grid;
+        height: 95%;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 24px;    
+        gap: 20px;
+        
+    }
+   }
+   div.content-col2 {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-bottom: 16px;
+    }
+
+   
+
+
+   }
+
 }
