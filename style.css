@@ -15,7 +15,7 @@
 
 .container {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 3fr;
+    grid-template: 1fr 4fr / minmax(267px, 1fr) 3fr;
     height: 1000px;
     grid-template-areas: 
     "sidebar ."
@@ -24,7 +24,7 @@
 }
 
 .sidebar {
-    padding: 40px;
+    padding: 20px 40px 40px 20px;
     grid-area: sidebar;
     background-color: rgba(25,147,213,255);
     color: #ffffff;
@@ -32,7 +32,27 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
+
     
+    img {
+        width: 25px;
+        height: auto;
+        color: #ffffff;
+        filter: invert(99%) sepia(94%) saturate(1%) hue-rotate(253deg) brightness(109%) contrast(100%);
+
+    }
+    .dashboard {
+        img {
+            width: 50px;
+        }   
+    }
+
+    div[class] {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     > div:nth-of-type(1) {
         font-size: max(32px, 2vw);
     }
@@ -43,6 +63,7 @@
         gap: 20px;
         font-size: max(1.2rem, 1.15vw);
     }
+
 
 }
 
