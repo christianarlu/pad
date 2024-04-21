@@ -1,5 +1,7 @@
+@import url(https://fonts.bunny.net/css?family=actor:400);
+
 :root {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: actor;
     font-size: 16px;
 }
 
