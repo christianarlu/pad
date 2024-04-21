@@ -81,6 +81,9 @@
             width: 50px;
             height: auto;
         }
+        p {
+            font-weight: 900;
+        }
     }
 
     > div:nth-child(3) {
@@ -146,6 +149,31 @@
         grid-template-rows: 1fr 1fr 1fr;
         padding: 24px;    
         gap: 20px;
+        .project-cards {
+            border-radius: 8px;
+            background-color: rgba(254,255,254,255);
+            padding: 40px 25px 25px 20px;
+            border-left: 10px solid #f1b529;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p {
+                color: #9d9c9c;
+                margin-top: 6px;
+                line-height: 21px;
+            }
+            div:not(.content-card-text) {
+                display: flex;
+                justify-content: flex-end;
+                gap: 24px;
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+            }
+            
+        }
         
     }
    }
